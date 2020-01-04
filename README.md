@@ -18,7 +18,7 @@ Initially the `SecretDiary` class is locked, meaning `add_entry` and `get_entrie
 
 When the user calls `unlock`, `add_entry` and `get_entries` should work as desired.
 
-When the user calls `lock` again they throw errors again. 
+When the user calls `lock` again they throw errors again.
 ```
 ### Process
 

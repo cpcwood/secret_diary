@@ -1,18 +1,17 @@
 class SecretDiary
-  def initialize
+  def initialize(diary)
     @lock_status = true
-    @entries = []
+    @diary = diary.new
   end
 
   def get_entries
     raise 'Diary is locked!' if @lock_status
-    @entries
+    @diary.entries
   end
 
   def add_entries(entry)
     raise 'Diary is locked!' if @lock_status
-    @entries << entry
-    'Entry added!'
+    @diary.add_entries(entry)
   end
 
   def unlock
